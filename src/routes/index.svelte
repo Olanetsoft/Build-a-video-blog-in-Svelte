@@ -2,7 +2,6 @@
   ///src/routes/index.svelte
   export async function load({ fetch }) {
     const posts = await fetch("/api").then((r) => r.json());
-    // const posts = []
     return {
       props: { posts },
     };
